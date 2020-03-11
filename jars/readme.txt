@@ -1,0 +1,1 @@
+Including these jars just in case. Hopefully sbt will work

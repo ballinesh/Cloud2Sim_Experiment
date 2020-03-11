@@ -1,0 +1,31 @@
+How to setup my project
+
+1.First you want to download and unzip to a folder or wherever you would prefer
+	I put it inside a folder called project1CS441
+
+2.Then you want to start up intellij, I am using the community edition 2019.2.1 and start a new project from existing
+	sources and select the entire folder where you unzipped
+
+3. You can choose to remove the jars from the jars folder that are not cloudsim4.0 and it should still work (This shows build.sbt works)
+
+4. Choose from existing sbt project and Make sure the project JDK is java 1.8
+
+5. Then we select the option "Download Library" and "Download sbt" 
+
+6. Then it will download all of the jars and libraries that it needs to
+	-The alternative is to just keep the jars folder and rename it to lib then right click on the jars and select "add as library"
+
+7. This part was getting tricky but to get it working properly you have to rename the jars folder to lib
+
+8.Then inside of the lib folder you want to right click on cloudsim-4.0 jars and select "add as library" and
+click okay
+
+9. The project should be able to run now using "sbt clean compile run" or "sbt clean compile test"
+
+***In the case that build.sbt is not working for some reason you can drag the logger jars and log4j jars to the lib folder then right click on all of them and select "add as Library
+
+***All of the text files included are simulation results so it looks easier to read
+
+***Unit tests are in the src -> test folder
+
+***Unit test are called suites for some reason, but they should crash when they fail, you can test by changing an expected value
